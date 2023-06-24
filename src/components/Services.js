@@ -2,24 +2,25 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const services = [
   {
-    name: "UI/UX Design",
+    name: "CSS, Bootstrap, Tailwind Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "I am using Tailwind, Bootstrap or even CSS to make best visual experience for customers.",
     link: "Learn more",
   },
   {
-    name: "Digital Marketing",
+    name: "React, Typescript",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Using React I create interactive and dynamic applications that are easy and intuitive to use.",
     link: "Learn more",
   },
   {
     name: "Product Branding",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "I help in designing the website and in branding a given product in order to maximize sales.",
     link: "Learn more",
   },
 ];
@@ -36,11 +37,13 @@ const Services = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
-            <h2 className="h2 text-accent mb-6">What i Do. </h2>
+            <h2 className="h2 mb-6">What i Do. </h2>
             <h3 className="h3 max-w-[455px] mb-16 ">
-              I'm freelance Front-end Developer with over 5 years of experience.
+              I'm freelance Front-end Developer with over 1 years of experience.
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <Link to="work" activeClass="active" smooth={true} spy={true}>
+              <button className="btn btn-sm">See my work</button>
+            </Link>
           </motion.div>
 
           <motion.div

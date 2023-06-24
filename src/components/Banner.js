@@ -1,9 +1,11 @@
 import React from "react";
-import Image from "../assets/avatar.svg";
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import Image from "../assets/avatar.png";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { fadeIn } from "../variants";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
+
 const Banner = () => {
   return (
     <section
@@ -36,11 +38,11 @@ const Banner = () => {
                   2000,
                   "Designer",
                   2000,
-                  "Youtuber",
+                  " and above all human... ",
                   2000,
                 ]}
                 speed={50}
-                className="text-accent"
+                className="h2"
                 wrapper="span"
                 repeat={Infinity}
               />
@@ -52,9 +54,11 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              Hi! I am a freelancer making mostly React application for small
+              companies. I heartily invites you to check my portfolio app which
+              one i made especially to sharing my works. I really like to know
+              that you are enyoing it so in the end you can tell me your
+              opinion. Thanks for your time.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -63,10 +67,14 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact Me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
-              </a>
+              <Link to="contact" activeClass="active" smooth={true} spy={true}>
+                <button className="btn btn-lg">Contact Me</button>
+              </Link>
+              <Link to="work" activeClass="active" smooth={true} spy={true}>
+                <a href="" className="text-gradient btn-link">
+                  My Portfolio
+                </a>
+              </Link>
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.7)}
@@ -75,14 +83,14 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text0-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
-                <FaYoutube />
+              <a href="https://www.instagram.com/karolczoch/">
+                <FaInstagram />
               </a>
-              <a href="#">
+              <a href="https://github.com/McVraxx?tab=repositories">
                 <FaGithub />
               </a>
-              <a href="#">
-                <FaDribbble />
+              <a href="https://www.linkedin.com/in/karol-czoch-69a238218/">
+                <FaLinkedin />
               </a>
             </motion.div>
           </div>

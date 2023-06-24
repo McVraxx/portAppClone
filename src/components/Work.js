@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img3 from "../assets/portfolio-img2.png";
+import Img2 from "../assets/portfolio-img3.png";
 
 const Work = () => {
   return (
@@ -15,37 +15,41 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
+            className="flex-1 flex flex-col gap-y-24 mb-10 lg:mb-0"
           >
             <div>
-              <h2 className="h2 leading-tight text-accent">
+              <h2 className="h2 leading-tight ">
                 My Latest <br />
                 Work
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s,Lorem Ipsum has sdfdssdfdsfsdfdsf,
+                There is some of my latest projects. Feel free to check it all!
+                <p className="max-w-sm mb-16">
+                  New ones will appear here when they are finished.
+                </p>
               </p>
-              <button className="btn btn-sm">View all projects</button>
             </div>
+            <a href="https://alapaca-app.vercel.app/">
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300"></div>
 
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img1}
+                  alt=""
+                />
 
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
-                alt=""
-              />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-50">
+                  <span className="text-gradient">alpacaApp</span>
+                </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-50">
-                <span className="text-gradient">UI/UX Desing</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3x1 text-white">
+                    Project for alapaca farm
+                  </span>
+                </div>
               </div>
-
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3x1 text-white">Project Title</span>
-              </div>
-            </div>
+            </a>
           </motion.div>
 
           <motion.div
@@ -55,40 +59,50 @@ const Work = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-10"
           >
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300"></div>
+            <a href="https://flinstone-c12052.netlify.app/">
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300"></div>
 
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img2}
-                alt=""
-              />
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img2}
+                  alt=""
+                />
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-50">
-                <span className="text-gradient">UI/UX Desing</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-50">
+                  <span className="text-gradient">flinstoneApp</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3x1 text-white">
+                    Website made for my friend, whose job is to lay stone covers
+                    on fences by hand.
+                  </span>
+                </div>
               </div>
+            </a>
+            <a href="https://wedding-app-ten.vercel.app/">
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300"></div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3x1 text-white">Project Title</span>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img3}
+                  alt=""
+                />
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-50">
+                  <span className="text-gradient">weddingApp</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3x1 text-white">
+                    This site was created before my wedding to invite guests who
+                    are far from where I live.
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full absolute z-40 transition-all duration-300"></div>
-
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img3}
-                alt=""
-              />
-
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-50">
-                <span className="text-gradient">UI/UX Desing</span>
-              </div>
-
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3x1 text-white">Project Title</span>
-              </div>
-            </div>
+            </a>
           </motion.div>
         </div>
       </div>
