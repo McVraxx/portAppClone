@@ -10,18 +10,21 @@ const services = [
     description:
       "I am using Tailwind, Bootstrap or even CSS to make best visual experience for customers.",
     link: "Learn more",
+    href: "https://getbootstrap.com/",
   },
   {
     name: "React, Typescript",
     description:
       "Using React I create interactive and dynamic applications that are easy and intuitive to use.",
     link: "Learn more",
+    href: "https://react.dev/",
   },
   {
     name: "Product Branding",
     description:
       "I help in designing the website and in branding a given product in order to maximize sales.",
     link: "Learn more",
+    href: "https://www.shopify.com/retail/product-branding",
   },
 ];
 
@@ -55,7 +58,7 @@ const Services = () => {
           >
             <div>
               {services.map((service, index) => {
-                const { name, description, link } = service;
+                const { name, description, link, href } = service;
                 return (
                   <div
                     className="border-b border-white/20 h-[146px]  mb-[38px] flex"
@@ -71,12 +74,12 @@ const Services = () => {
                     </div>
                     <div className="flex flex-col flex-1 items-end">
                       <a
-                        href="#"
+                        href={href}
                         className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a className="text-gradient text-sm" href="#">
+                      <a className="text-gradient text-sm" href={href}>
                         {link}
                       </a>
                     </div>
